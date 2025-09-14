@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
@@ -37,6 +38,30 @@ const Index = () => {
               Развлекательный центр для детей в ЖК "Спутник"<br/>
               Играем, учимся и веселимся до ночи!
             </p>
+            {/* УТП блок */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 mb-12 border-2 border-monster-yellow">
+              <h3 className="font-comic text-3xl font-bold text-monster-yellow mb-6 text-center animate-bounce-gentle">
+                🎯 Единственный в городе!
+              </h3>
+              <div className="grid md:grid-cols-3 gap-6 text-center">
+                <div className="bg-monster-orange/20 rounded-2xl p-4">
+                  <div className="text-4xl mb-2">🌙</div>
+                  <h4 className="font-comic text-xl text-white mb-2">До 23:00!</h4>
+                  <p className="text-white/80">Единственный детский центр с вечерним графиком</p>
+                </div>
+                <div className="bg-monster-blue/20 rounded-2xl p-4">
+                  <div className="text-4xl mb-2">🏰</div>
+                  <h4 className="font-comic text-xl text-white mb-2">Как в отеле!</h4>
+                  <p className="text-white/80">Полное погружение в английскую среду</p>
+                </div>
+                <div className="bg-monster-green/20 rounded-2xl p-4">
+                  <div className="text-4xl mb-2">👨‍🏫</div>
+                  <h4 className="font-comic text-xl text-white mb-2">Носители языка!</h4>
+                  <p className="text-white/80">Настоящие англичане и американцы</p>
+                </div>
+              </div>
+            </div>
+            
             <div className="flex flex-wrap justify-center gap-4 mb-12">
               <Badge className="bg-monster-yellow text-black text-lg px-4 py-2 animate-float">
                 👶 Дошкольники
@@ -241,6 +266,88 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Schedule Section */}
+      <section className="py-16 bg-white/5 backdrop-blur-sm">
+        <div className="container mx-auto px-4">
+          <h3 className="font-comic text-4xl font-bold text-center text-white mb-12">
+            📅 Расписание работы
+          </h3>
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+              <CardHeader className="text-center">
+                <CardTitle className="font-comic text-2xl text-monster-yellow">
+                  🕐 График работы отеля
+                </CardTitle>
+                <CardDescription className="text-white/80">
+                  Выберите удобное время для посещения
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Table>
+                  <TableHeader>
+                    <TableRow className="border-white/20">
+                      <TableHead className="text-monster-yellow font-comic text-lg">День недели</TableHead>
+                      <TableHead className="text-monster-yellow font-comic text-lg">Время работы</TableHead>
+                      <TableHead className="text-monster-yellow font-comic text-lg">Программы</TableHead>
+                      <TableHead className="text-monster-yellow font-comic text-lg">Возрастные группы</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow className="border-white/10">
+                      <TableCell className="text-white font-semibold">Понедельник</TableCell>
+                      <TableCell className="text-white/90">10:00 - 22:00</TableCell>
+                      <TableCell className="text-white/90">Замок Дракулы, Логово Оборотня</TableCell>
+                      <TableCell className="text-white/90">3-12 лет</TableCell>
+                    </TableRow>
+                    <TableRow className="border-white/10">
+                      <TableCell className="text-white font-semibold">Вторник</TableCell>
+                      <TableCell className="text-white/90">10:00 - 22:00</TableCell>
+                      <TableCell className="text-white/90">Дом Привидений, Квесты</TableCell>
+                      <TableCell className="text-white/90">5-12 лет</TableCell>
+                    </TableRow>
+                    <TableRow className="border-white/10">
+                      <TableCell className="text-white font-semibold">Среда</TableCell>
+                      <TableCell className="text-white/90">10:00 - 22:00</TableCell>
+                      <TableCell className="text-white/90">Все программы</TableCell>
+                      <TableCell className="text-white/90">3-12 лет</TableCell>
+                    </TableRow>
+                    <TableRow className="border-white/10">
+                      <TableCell className="text-white font-semibold">Четверг</TableCell>
+                      <TableCell className="text-white/90">10:00 - 22:00</TableCell>
+                      <TableCell className="text-white/90">Театральные постановки</TableCell>
+                      <TableCell className="text-white/90">6-12 лет</TableCell>
+                    </TableRow>
+                    <TableRow className="border-white/10">
+                      <TableCell className="text-white font-semibold">Пятница</TableCell>
+                      <TableCell className="text-white/90">10:00 - 22:00</TableCell>
+                      <TableCell className="text-white/90">Вечеринки монстров</TableCell>
+                      <TableCell className="text-white/90">3-12 лет</TableCell>
+                    </TableRow>
+                    <TableRow className="border-white/10 bg-monster-orange/10">
+                      <TableCell className="text-monster-yellow font-semibold">Суббота</TableCell>
+                      <TableCell className="text-monster-yellow font-semibold">10:00 - 23:00</TableCell>
+                      <TableCell className="text-monster-yellow">Все программы + Ночные квесты</TableCell>
+                      <TableCell className="text-monster-yellow">3-14 лет</TableCell>
+                    </TableRow>
+                    <TableRow className="border-white/10 bg-monster-orange/10">
+                      <TableCell className="text-monster-yellow font-semibold">Воскресенье</TableCell>
+                      <TableCell className="text-monster-yellow font-semibold">10:00 - 23:00</TableCell>
+                      <TableCell className="text-monster-yellow">Семейные программы</TableCell>
+                      <TableCell className="text-monster-yellow">Вся семья</TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+                <div className="mt-6 p-4 bg-monster-purple/20 rounded-lg">
+                  <p className="text-white/90 text-center">
+                    💡 <strong>Специальные предложения:</strong> В выходные действуют семейные тарифы и ночные квесты до 23:00!
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -290,7 +397,7 @@ const Index = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-16 bg-white/5 backdrop-blur-sm">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <h3 className="font-comic text-4xl font-bold text-center text-white mb-12">
             📞 Записаться на открытие
