@@ -39,25 +39,30 @@ const Index = () => {
               Играем, учимся и веселимся до ночи!
             </p>
             {/* УТП блок */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 mb-12 border-2 border-monster-yellow">
-              <h3 className="font-comic text-3xl font-bold text-monster-yellow mb-6 text-center animate-bounce-gentle">
-                🎯 Единственный в городе!
+            <div className="bg-black/40 backdrop-blur-sm rounded-3xl p-8 mb-12 border-4 border-monster-yellow shadow-2xl">
+              <h3 className="font-comic text-4xl font-bold text-monster-yellow mb-6 text-center animate-bounce-gentle">
+                🎯 ЕДИНСТВЕННЫЙ В ГОРОДЕ!
               </h3>
-              <div className="grid md:grid-cols-3 gap-6 text-center">
-                <div className="bg-monster-orange/20 rounded-2xl p-4">
-                  <div className="text-4xl mb-2">🌙</div>
-                  <h4 className="font-comic text-xl text-white mb-2">До 23:00!</h4>
-                  <p className="text-white/80">Единственный детский центр с вечерним графиком</p>
+              <div className="grid md:grid-cols-4 gap-6 text-center">
+                <div className="bg-monster-orange/30 rounded-2xl p-6 border-2 border-monster-orange">
+                  <div className="text-5xl mb-3">🌙</div>
+                  <h4 className="font-comic text-xl text-white mb-3 font-bold">До 22:00 и 23:00!</h4>
+                  <p className="text-white font-semibold">Будни до 22:00<br/>Выходные до 23:00</p>
                 </div>
-                <div className="bg-monster-blue/20 rounded-2xl p-4">
-                  <div className="text-4xl mb-2">🏰</div>
-                  <h4 className="font-comic text-xl text-white mb-2">Как в отеле!</h4>
-                  <p className="text-white/80">Полное погружение в английскую среду</p>
+                <div className="bg-monster-blue/30 rounded-2xl p-6 border-2 border-monster-blue">
+                  <div className="text-5xl mb-3">🏨</div>
+                  <h4 className="font-comic text-xl text-white mb-3 font-bold">НАСТОЯЩИЙ ОТЕЛЬ!</h4>
+                  <p className="text-white font-semibold">Дети думают что в настоящем отеле и идут с удовольствием!</p>
                 </div>
-                <div className="bg-monster-green/20 rounded-2xl p-4">
-                  <div className="text-4xl mb-2">👨‍🏫</div>
-                  <h4 className="font-comic text-xl text-white mb-2">Носители языка!</h4>
-                  <p className="text-white/80">Настоящие англичане и американцы</p>
+                <div className="bg-monster-green/30 rounded-2xl p-6 border-2 border-monster-green">
+                  <div className="text-5xl mb-3">👨‍🏫</div>
+                  <h4 className="font-comic text-xl text-white mb-3 font-bold">Носители языка!</h4>
+                  <p className="text-white font-semibold">Настоящие англичане и американцы</p>
+                </div>
+                <div className="bg-monster-pink/30 rounded-2xl p-6 border-2 border-monster-pink">
+                  <div className="text-5xl mb-3">📹</div>
+                  <h4 className="font-comic text-xl text-white mb-3 font-bold">Смотрите удалённо!</h4>
+                  <p className="text-white font-semibold">Видеонаблюдение онлайн для родителей</p>
                 </div>
               </div>
             </div>
@@ -293,35 +298,35 @@ const Index = () => {
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    <TableRow className="border-white/10">
-                      <TableCell className="text-white font-semibold">Понедельник</TableCell>
-                      <TableCell className="text-white/90">10:00 - 22:00</TableCell>
-                      <TableCell className="text-white/90">Замок Дракулы, Логово Оборотня</TableCell>
-                      <TableCell className="text-white/90">3-12 лет</TableCell>
+                    <TableRow className="border-white/10 bg-monster-blue/10">
+                      <TableCell className="text-white font-bold">Понедельник</TableCell>
+                      <TableCell className="text-white font-bold">10:00 - 22:00</TableCell>
+                      <TableCell className="text-white">Замок Дракулы, Логово Оборотня</TableCell>
+                      <TableCell className="text-white">3-12 лет</TableCell>
                     </TableRow>
-                    <TableRow className="border-white/10">
-                      <TableCell className="text-white font-semibold">Вторник</TableCell>
-                      <TableCell className="text-white/90">10:00 - 22:00</TableCell>
-                      <TableCell className="text-white/90">Дом Привидений, Квесты</TableCell>
-                      <TableCell className="text-white/90">5-12 лет</TableCell>
+                    <TableRow className="border-white/10 bg-monster-green/10">
+                      <TableCell className="text-white font-bold">Вторник</TableCell>
+                      <TableCell className="text-white font-bold">10:00 - 22:00</TableCell>
+                      <TableCell className="text-white">Дом Привидений, Квесты</TableCell>
+                      <TableCell className="text-white">5-12 лет</TableCell>
                     </TableRow>
-                    <TableRow className="border-white/10">
-                      <TableCell className="text-white font-semibold">Среда</TableCell>
-                      <TableCell className="text-white/90">10:00 - 22:00</TableCell>
-                      <TableCell className="text-white/90">Все программы</TableCell>
-                      <TableCell className="text-white/90">3-12 лет</TableCell>
+                    <TableRow className="border-white/10 bg-monster-purple/10">
+                      <TableCell className="text-white font-bold">Среда</TableCell>
+                      <TableCell className="text-white font-bold">10:00 - 22:00</TableCell>
+                      <TableCell className="text-white">Все программы</TableCell>
+                      <TableCell className="text-white">3-12 лет</TableCell>
                     </TableRow>
-                    <TableRow className="border-white/10">
-                      <TableCell className="text-white font-semibold">Четверг</TableCell>
-                      <TableCell className="text-white/90">10:00 - 22:00</TableCell>
-                      <TableCell className="text-white/90">Театральные постановки</TableCell>
-                      <TableCell className="text-white/90">6-12 лет</TableCell>
+                    <TableRow className="border-white/10 bg-monster-pink/10">
+                      <TableCell className="text-white font-bold">Четверг</TableCell>
+                      <TableCell className="text-white font-bold">10:00 - 22:00</TableCell>
+                      <TableCell className="text-white">Театральные постановки</TableCell>
+                      <TableCell className="text-white">6-12 лет</TableCell>
                     </TableRow>
-                    <TableRow className="border-white/10">
-                      <TableCell className="text-white font-semibold">Пятница</TableCell>
-                      <TableCell className="text-white/90">10:00 - 22:00</TableCell>
-                      <TableCell className="text-white/90">Вечеринки монстров</TableCell>
-                      <TableCell className="text-white/90">3-12 лет</TableCell>
+                    <TableRow className="border-white/10 bg-monster-turquoise/10">
+                      <TableCell className="text-white font-bold">Пятница</TableCell>
+                      <TableCell className="text-white font-bold">10:00 - 22:00</TableCell>
+                      <TableCell className="text-white">Вечеринки монстров</TableCell>
+                      <TableCell className="text-white">3-12 лет</TableCell>
                     </TableRow>
                     <TableRow className="border-white/10 bg-monster-orange/10">
                       <TableCell className="text-monster-yellow font-semibold">Суббота</TableCell>
@@ -396,6 +401,86 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Photo Gallery */}
+      <section className="py-16 bg-black/20 backdrop-blur-sm">
+        <div className="container mx-auto px-4">
+          <h3 className="font-comic text-4xl font-bold text-center text-white mb-12">
+            📸 Фотогалерея отеля
+          </h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="relative group">
+              <img 
+                src="/img/4e501d8d-502e-478d-91dc-9db115bebf76.jpg" 
+                alt="Монстры отеля Трансильвания"
+                className="w-full h-64 object-cover rounded-3xl border-4 border-monster-orange shadow-2xl group-hover:scale-105 transition-transform"
+              />
+              <div className="absolute inset-0 bg-monster-orange/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div className="relative group">
+              <img 
+                src="/img/c057f74e-c0ca-4460-bbc9-43562e40d985.jpg" 
+                alt="Тематические комнаты"
+                className="w-full h-64 object-cover rounded-3xl border-4 border-monster-blue shadow-2xl group-hover:scale-105 transition-transform"
+              />
+              <div className="absolute inset-0 bg-monster-blue/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div className="relative group">
+              <img 
+                src="/img/d407c55c-9cab-4277-b76f-de6ad3cf7948.jpg" 
+                alt="Игровые зоны отеля"
+                className="w-full h-64 object-cover rounded-3xl border-4 border-monster-green shadow-2xl group-hover:scale-105 transition-transform"
+              />
+              <div className="absolute inset-0 bg-monster-green/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="py-16 bg-white/5 backdrop-blur-sm">
+        <div className="container mx-auto px-4">
+          <h3 className="font-comic text-4xl font-bold text-center text-white mb-12">
+            🗺️ Как нас найти
+          </h3>
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-black/40 backdrop-blur-sm border-monster-yellow border-4">
+              <CardHeader className="text-center">
+                <CardTitle className="font-comic text-3xl text-monster-yellow">
+                  📍 Отель "Трансильвания"
+                </CardTitle>
+                <CardDescription className="text-white text-lg font-semibold">
+                  ЖК "Спутник", ул. Липовой Рощи, 6г1 (бывший surf coffee)
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="bg-monster-turquoise/20 rounded-2xl p-6 border-2 border-monster-turquoise">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="text-center">
+                      <Icon name="MapPin" size={48} className="mx-auto text-monster-yellow mb-4" />
+                      <h4 className="font-comic text-xl text-white mb-2">Местоположение</h4>
+                      <p className="text-white font-semibold">
+                        Центр города<br/>
+                        Удобная парковка<br/>
+                        Рядом магазины
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <Icon name="Car" size={48} className="mx-auto text-monster-yellow mb-4" />
+                      <h4 className="font-comic text-xl text-white mb-2">Как добраться</h4>
+                      <p className="text-white font-semibold">
+                        На авто: 5 мин от центра<br/>
+                        На общественном транспорте<br/>
+                        Остановка "Спутник"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Form */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -416,24 +501,26 @@ const Index = () => {
                 <div className="grid md:grid-cols-2 gap-4">
                   <Input 
                     placeholder="Имя ребенка" 
-                    className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
+                    className="bg-black/40 border-monster-yellow border-2 text-white placeholder:text-white font-semibold"
+                    required
                   />
                   <Input 
-                    placeholder="Возраст" 
-                    className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
+                    placeholder="Возраст ребенка" 
+                    className="bg-black/40 border-monster-orange border-2 text-white placeholder:text-white font-semibold"
+                    required
                   />
                 </div>
                 <Input 
-                  placeholder="Ваш телефон" 
-                  className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
+                  placeholder="Ваш телефон для связи" 
+                  className="bg-black/40 border-monster-green border-2 text-white placeholder:text-white font-semibold"
+                  required
                 />
-                <Textarea 
-                  placeholder="Дополнительные пожелания" 
-                  className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
-                />
-                <Button className="w-full bg-monster-orange hover:bg-orange-600 text-white font-comic text-lg py-6">
-                  🎃 Записаться сейчас!
+                <Button className="w-full bg-monster-orange hover:bg-orange-700 text-white font-comic text-xl py-8 border-4 border-monster-yellow shadow-2xl">
+                  🎃 ЗАПИСАТЬСЯ СЕЙЧАС!
                 </Button>
+                <p className="text-center text-white/80 mt-4">
+                  ☎️ Или позвоните: <span className="font-bold text-monster-yellow">+7 903 777 03 55</span>
+                </p>
               </CardContent>
             </Card>
           </div>

@@ -20,13 +20,13 @@ export default {
 		extend: {
 			colors: {
 				monster: {
-					orange: '#FF6B35',
-					turquoise: '#4ECIDC4',
-					blue: '#45B7D1',
-					yellow: '#FFE695',
-					purple: '#9b87f5',
-					pink: '#FFDEE2',
-					green: '#4ADE80'
+					orange: '#FF4500',
+					turquoise: '#00CED1',
+					blue: '#1E90FF',
+					yellow: '#FFD700',
+					purple: '#8A2BE2',
+					pink: '#FF1493',
+					green: '#32CD32'
 				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
